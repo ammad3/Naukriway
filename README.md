@@ -14,6 +14,6 @@
 -CSS3
 -Responsive design using 'vw', 'em', and flexbox.
 ## Author
-Created by [Shaikh Ammaduddin] only. <-- Team Leader
-Usman <-- Team Member assigned but no participation from him.
-Design idea based on basic job protal needs.
+- Created by [Shaikh Ammaduddin] only. <-- Team Leader
+- Usman <-- Team Member assigned but no participation from him.
+- Design idea based on basic job protal needs.
