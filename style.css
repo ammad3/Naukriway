@@ -141,6 +141,7 @@ textarea{
 
 .search-form input{
   height: 8vh;
+  font-size: 1rem;
 }
 
 .search-form input::placeholder {
