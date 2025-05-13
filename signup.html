@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/assists/icons/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assists/icons/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assists/icons/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assists/icons/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assists/icons/favicon_io/site.webmanifest">
     <title>NaukariWay-Login</title>
 </head>
+
 <body class="common-form-body">
     <header>
         <a id="logo" href="/index.html">Naukari<span>Way</span></a>
     </header>
     <div class="signup-container">
-    <form class="common-form" action="" method="POST">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Empty" id="name" maxlength="15">
+        <form class="common-form" action="" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Empty" id="name" maxlength="15">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" maxlength="15">
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="mobile">Phone Number</label>
+                <input type="tel" name="mobile" id="mobile">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" maxlength="20">
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="" id="confirm-password">
+            </div>
+            <p>Have a Account? <a href="/profile/login.html">Login In</a></p>
+            <button type="submit">Create an Account</button>
+        </form>
+        <div class="signup-img">
+            <img src="/assists/img/Jobseeker.png" alt="image">
         </div>
-        <div>
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" maxlength="15">
-        </div>
-        <div>
-            <label for="dob">Date of Birth</label>
-            <input type="date" name="dob" id="dob">
-        </div>
-        <div>
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div>
-            <label for="mobile">Phone Number</label>
-            <input type="tel" name="mobile" id="mobile">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" maxlength="20">
-        </div>
-        <div>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="" id="confirm-password">
-        </div>
-        <p>Have a Account? <a href="/profile/login.html">Login In</a></p>
-        <button type="submit">Create an Account</button>
-    </form>
-    <div class="signup-img">
-        <img src="/assists/img/Jobseeker.png" alt="image">
-    </div>
     </div>
 </body>
+
 </html>
