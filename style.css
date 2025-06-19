@@ -26,6 +26,7 @@ body {
 
 a {
   text-decoration: none;
+
 }
 
 ul li {
@@ -47,6 +48,7 @@ button {
   max-height: 50px;
   height: auto;
   justify-content: center;
+  transition: 0.3s ease;
 }
 
 button:hover {
@@ -68,7 +70,7 @@ input {
 }
 
 input:focus {
-  outline-color:#6e90ff ;
+  outline-color: #6e90ff;
   box-shadow: 0 0 0 1px #6e90ff;
   /* remove default browser outline */
 }
@@ -85,7 +87,7 @@ input::placeholder {
 
 select {
   background-color: var(--light-color);
-  border: var(--primary-color) solid  1px;
+  border: var(--primary-color) solid 1px;
   border-radius: 5px;
   width: 200px;
   height: 30px;
@@ -98,9 +100,10 @@ textarea {
   border-radius: 5px;
   padding: 5px;
   font-size: 1.1rem;
+  max-width: 77%;
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
   box-shadow: 0 0 0 1px #6e90ff;
 }
@@ -162,7 +165,7 @@ textarea:focus{
     width: 100%;
     padding: 10px 0;
     background-color: #775d773f;
-  
+
   }
 
   .nav-links.show {
@@ -172,6 +175,8 @@ textarea:focus{
   .menu-icon {
     display: block;
   }
+
+
 
 }
 
@@ -187,7 +192,7 @@ textarea:focus{
   color: var(--light-color);
   text-align: center;
   position: relative;
- 
+
 }
 
 /* search bar */
@@ -320,6 +325,11 @@ textarea:focus{
   gap: 1rem;
 }
 
+#login-body {
+  padding-top: 10%;
+}
+
+
 .common-form {
   display: flex;
   flex-direction: column;
@@ -332,11 +342,12 @@ textarea:focus{
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
 }
 
-.input-style{
+.input-style {
   display: flex;
   flex-direction: column;
   color: var(--secondary-color);
 }
+
 /* .signup-container {
   display: flex;
   flex-direction: row-reverse;
@@ -364,7 +375,7 @@ textarea:focus{
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  margin: 5rem;
+  margin: 5vw;
 }
 
 .text-content h1 {
@@ -395,6 +406,12 @@ textarea:focus{
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  transition: 0.3s ease;
+
+}
+
+.employer-btn:hover {
+  background-color: #0056b3;
 }
 
 /*job post */
@@ -449,18 +466,19 @@ main {
   display: flex;
 }
 
-#navbar .settings-wrap a{
+#navbar .settings-wrap a {
   display: flex;
   gap: 4px;
 
 }
-#navbar .settings-wrap a:hover{
+
+#navbar .settings-wrap a:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
 
 }
 
-#navbar .settings-wrap img{
+#navbar .settings-wrap img {
   width: 20px;
 
 }
@@ -489,10 +507,11 @@ aside #profile-picture {
   min-height: 160px;
 }
 
-aside #profile-picture:hover{
+aside #profile-picture:hover {
   border: var(--secondary-color) solid 4px;
 
 }
+
 aside #profile-picture img {
   height: 100%;
   width: 100%;
@@ -508,28 +527,28 @@ aside #personal-info .profile-text {
   letter-spacing: 0.1em;
 }
 
-aside #personal-info .info-wrap{
+aside #personal-info .info-wrap {
   display: flex;
   min-width: 160px;
   background-color: #fff;
   gap: 4px;
-  border-bottom: #858dfd solid 1px; 
+  border-bottom: #858dfd solid 1px;
   padding: 2px;
   align-items: center;
 }
 
-aside #personal-info .info-wrap img{
+aside #personal-info .info-wrap img {
   width: 20px;
 }
 
-aside .quick-update ul{
+aside .quick-update ul {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
   text-align: center;
 }
 
-aside .quick-update ul li a{
+aside .quick-update ul li a {
   border: var(--light-text-color) solid 1px;
   padding: 4px;
   border-radius: 5px;
@@ -537,7 +556,8 @@ aside .quick-update ul li a{
   color: var(--light-text-color);
   min-width: 130px;
 }
-aside .quick-update ul li a:hover{
+
+aside .quick-update ul li a:hover {
   background-color: #d6d9fa;
 }
 
@@ -592,12 +612,12 @@ article ul li p {
 
 /*---Profile Page Css end here--- */
 /*Career and Resume*/
-form{
+form {
   width: auto;
   margin: 0 auto;
 }
 
-form .resume-container{
+form .resume-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -607,34 +627,37 @@ form .resume-container{
 }
 
 
-form .resume-container .field-box{
+form .resume-container .field-box {
   width: 80vw;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   border: #a1a1a1 solid 1px;
   border-radius: 5px;
   margin-top: 10px;
+  padding: 1%;
+
 }
 
-form .resume-container .field-box .cards-container{
+form .resume-container .field-box .cards-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
   border: none;
-  
+
+
 }
 
-form .resume-container .field-box .cards-container .resume-card{
+form .resume-container .field-box .cards-container .resume-card {
   display: flex;
   flex-direction: column;
   gap: 2px;
   width: 80vw;
   padding: 4px;
-  
+
 }
 
-.form-btn-container{
-  display: flex ;
+.form-btn-container {
+  display: flex;
   gap: 10px;
   padding: 20px;
 }
@@ -683,6 +706,22 @@ footer a:hover {
   gap: 0.5rem;
 }
 
-.documentation p{
+.documentation p {
   color: #999999;
+}
+
+/* Settings page */
+.settings-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }

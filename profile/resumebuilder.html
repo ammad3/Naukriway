@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/assists/icons/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assists/icons/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assists/icons/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assists/icons/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assists/icons/favicon_io/site.webmanifest">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <title>NaukariWay - Career & Resume</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a id="logo" href="/index.html">Naukari<span>Way</span></a>
+        <div class="settings-wrap"><a href="#"><img src="/assists/icons/setting.png" alt="">Settings</a></div>
+    </nav>
+    <form>
+        <fieldset class="resume-container">
+            <h1>Resume Builder</h1>
+            <div>
+                <fieldset class="field-box">
+                    <h2>Personal Details</h2>
+                    <!-- Full Name -->
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" value="Ammad Sheikh" placeholder="Abdul Rehman"
+                        required>
+                    <br>
+                    <!-- Email Address -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="ammad@yahoo.com" placeholder="naeem@example.com"
+                        required>
+                    <br>
+                    <!-- Phone Number -->
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" value="0312-1234567" placeholder="0312-1234567" required>
+                    <br>
+                    <!-- Address -->
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="2" placeholder="Your address"
+                        required>House 123, Street ABC, Karachi, Pakistan</textarea>
+                </fieldset>
+            </div>
+            <div class="field-box">
+                <h2>Work Experience</h2>
+                <fieldset class="cards-container" id="experience">
+                    <div class="resume-card">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" value="PRAL pvt ltd"
+                            placeholder="ABC Corporation">
+                    </div>
+                    <div class="resume-card">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" id="jobTitle" name="job-title" value="Facilitation Officer"
+                            placeholder="Software Engineer" required>
+                    </div>
+                    <div class="resume-card">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate" name="start-date">
+                    </div>
+                    <div class="resume-card">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate" name="end-date">
+                    </div>
+                    <div class="resume-card">
+                        <label for="description">Job Description</label>
+                        <textarea id="description" name="job-description" rows="4"
+                            placeholder="Describe your role..." required>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, hic.</textarea>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="field-box">
+                <h2>Education</h2>
+                <fieldset class="cards-container" id="education">
+                    <!-- School Name -->
+                    <div class="resume-card">
+                        <label for="school">School Name</label>
+                        <input type="text" id="school" name="school" value="Dream public school"
+                            placeholder="University of Example" required>
+                    </div>
+
+                    <!-- Degree -->
+                    <div class="resume-card">
+                        <label for="degree">Degree</label>
+                        <input type="text" id="degree" name="degree" value="Bachelor in science"
+                            placeholder="Bachelor's in Computer Science" required>
+                    </div>
+
+                    <!-- Graduation Year -->
+                    <div class="resume-card">
+                        <label for="graduateYear">Graduation Year</label>
+                        <input type="number" id="graduateYear" name="gradYear" value="2014" min="1900" max="2100">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="field-box">
+                <h2>Skills</h2>
+                <fieldset class="cards-container">
+                    <div class="resume-card">
+                        <label for="addSkills">Skill</label>
+                        <input type="text" id="addSkills" name="skills" value="HTML CSS" placeholder="">
+                        <ul id="skillsList"></ul>
+                    </div>
+                    <button id="addBtn" type="button">Add More</button>
+                </fieldset>
+            </div>
+            <div class="form-btn-container">
+                <button onclick="generatePDF()">Download PDF</button>
+                <button id="reset" type="reset">Reset</button>
+            </div>
+
+        </fieldset>
+    </form>
+    <script src="../script.js"></script>
+</body>
+
+</html>
