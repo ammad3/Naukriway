@@ -85,6 +85,11 @@ input::placeholder {
   color: #cacaca;
 }
 
+input[type="date"]{
+  color: #cacaca;
+}
+
+
 select {
   background-color: var(--light-color);
   border: var(--primary-color) solid 1px;
@@ -163,8 +168,9 @@ textarea:focus {
     top: 60px;
     left: 0;
     width: 100%;
-    padding: 10px 0;
-    background-color: #775d773f;
+    padding: 10px;
+    background-color: #d5d2fc;
+    border-radius: 4px;
 
   }
 
@@ -334,12 +340,12 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: self-end;
-  border: #bcb2f8 solid 1px;
+  align-items: end;
   border-radius: 10px;
   padding: 20px;
   font-weight: 500;
-  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .input-style {
@@ -721,7 +727,20 @@ footer a:hover {
 }
 
 .section {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
 }
+
+.section label {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  
+ 
+}
+
