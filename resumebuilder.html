@@ -15,10 +15,7 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <a id="logo" href="/index.html">Naukari<span>Way</span></a>
-        <div class="settings-wrap"><a href="#"><img src="/assists/icons/setting.png" alt="">Settings</a></div>
-    </nav>
+<div id="navigation"></div>
     <form>
         <fieldset class="resume-container">
             <h1>Resume Builder</h1>
@@ -27,22 +24,20 @@
                     <h2>Personal Details</h2>
                     <!-- Full Name -->
                     <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" name="fullName" value="Ammad Sheikh" placeholder="Abdul Rehman"
+                    <input type="text" id="fullName" name="fullName" placeholder="Abdul Rehman"
                         required>
                     <br>
                     <!-- Email Address -->
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" value="ammad@yahoo.com" placeholder="naeem@example.com"
-                        required>
+                    <input type="email" id="email" name="email" placeholder="naeem@example.com" required>
                     <br>
                     <!-- Phone Number -->
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" value="0312-1234567" placeholder="0312-1234567" required>
+                    <input type="tel" id="phone" name="phone" placeholder="0312-1234567" required>
                     <br>
                     <!-- Address -->
                     <label for="address">Address</label>
-                    <textarea id="address" name="address" rows="2" placeholder="Your address"
-                        required>House 123, Street ABC, Karachi, Pakistan</textarea>
+                    <textarea id="address" name="address" rows="2" placeholder="Your address" required></textarea>
                 </fieldset>
             </div>
             <div class="field-box">
@@ -50,13 +45,11 @@
                 <fieldset class="cards-container" id="experience">
                     <div class="resume-card">
                         <label for="company">Company Name</label>
-                        <input type="text" id="company" name="company" value="PRAL pvt ltd"
-                            placeholder="ABC Corporation">
+                        <input type="text" id="company" name="company" placeholder="ABC Corporation">
                     </div>
                     <div class="resume-card">
                         <label for="jobTitle">Job Title</label>
-                        <input type="text" id="jobTitle" name="job-title" value="Facilitation Officer"
-                            placeholder="Software Engineer" required>
+                        <input type="text" id="jobTitle" name="job-title" placeholder="Software Engineer" required>
                     </div>
                     <div class="resume-card">
                         <label for="startDate">Start Date</label>
@@ -68,8 +61,8 @@
                     </div>
                     <div class="resume-card">
                         <label for="description">Job Description</label>
-                        <textarea id="description" name="job-description" rows="4"
-                            placeholder="Describe your role..." required>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, hic.</textarea>
+                        <textarea id="description" name="job-description" rows="4" placeholder="Describe your role..."
+                            required></textarea>
                     </div>
                 </fieldset>
             </div>
@@ -79,21 +72,20 @@
                     <!-- School Name -->
                     <div class="resume-card">
                         <label for="school">School Name</label>
-                        <input type="text" id="school" name="school" value="Dream public school"
-                            placeholder="University of Example" required>
+                        <input type="text" id="school" name="school" placeholder="University of Example" required>
                     </div>
 
                     <!-- Degree -->
                     <div class="resume-card">
                         <label for="degree">Degree</label>
-                        <input type="text" id="degree" name="degree" value="Bachelor in science"
-                            placeholder="Bachelor's in Computer Science" required>
+                        <input type="text" id="degree" name="degree" placeholder="Bachelor's in Computer Science"
+                            required>
                     </div>
 
                     <!-- Graduation Year -->
                     <div class="resume-card">
                         <label for="graduateYear">Graduation Year</label>
-                        <input type="number" id="graduateYear" name="gradYear" value="2014" min="1900" max="2100">
+                        <input type="number" id="graduateYear" name="gradYear" min="1900" max="2100">
                     </div>
                 </fieldset>
             </div>
@@ -102,7 +94,7 @@
                 <fieldset class="cards-container">
                     <div class="resume-card">
                         <label for="addSkills">Skill</label>
-                        <input type="text" id="addSkills" name="skills" value="HTML CSS" placeholder="">
+                        <input type="text" id="addSkills" name="skills" placeholder="..">
                         <ul id="skillsList"></ul>
                     </div>
                     <button id="addBtn" type="button">Add More</button>
@@ -115,7 +107,7 @@
 
         </fieldset>
     </form>
-    <script src="../script.js"></script>
+    <script src="/script.js"></script>
     <script src="/pdf.js"></script>
 </body>
 
