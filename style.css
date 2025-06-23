@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -7,9 +7,9 @@
 }
 
 :root {
-  --primary-color: #ff7272;
-  --secondary-color: #4456fc;
-  --light-color: #fff;
+  --primary-color: #8080f2;
+  --secondary-color: #093988;
+  --light-color: #9ebcef;
   --light-text-color: #333333;
   --input-border-color: #cfcfcf;
 }
@@ -21,12 +21,10 @@ html {
 body {
   background: var(--light-color);
   color: var(--light-text-color);
-
 }
 
 a {
   text-decoration: none;
-
 }
 
 ul li {
@@ -39,7 +37,7 @@ button {
   align-items: center;
   padding: 10px;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #318ae9;
   color: var(--light-color);
   border: none;
   cursor: pointer;
@@ -52,7 +50,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #7ca4ce;
 }
 
 /*Input customized*/
@@ -85,10 +83,9 @@ input::placeholder {
   color: #cacaca;
 }
 
-input[type="date"]{
+input[type="date"] {
   color: #cacaca;
 }
-
 
 select {
   background-color: var(--light-color);
@@ -120,7 +117,7 @@ textarea:focus {
 }
 
 #logo span {
-  color: var(--secondary-color);
+  color: #dd1818;
 }
 
 /* navbar css */
@@ -171,7 +168,6 @@ textarea:focus {
     padding: 10px;
     background-color: #d5d2fc;
     border-radius: 4px;
-
   }
 
   .nav-links.show {
@@ -181,9 +177,6 @@ textarea:focus {
   .menu-icon {
     display: block;
   }
-
-
-
 }
 
 #home-header {
@@ -198,7 +191,6 @@ textarea:focus {
   color: var(--light-color);
   text-align: center;
   position: relative;
-
 }
 
 /* search bar */
@@ -241,7 +233,6 @@ textarea:focus {
   color: var(--secondary-color);
 }
 
-
 .search-form #search-btn {
   display: flex;
   align-items: center;
@@ -273,7 +264,6 @@ textarea:focus {
   width: 90vw;
   margin: auto;
   text-align: center;
-
 }
 
 #trusted-companies h2 {
@@ -334,7 +324,6 @@ textarea:focus {
 #login-body {
   padding-top: 10%;
 }
-
 
 .common-form {
   display: flex;
@@ -413,7 +402,6 @@ textarea:focus {
   cursor: pointer;
   border-radius: 5px;
   transition: 0.3s ease;
-
 }
 
 .employer-btn:hover {
@@ -453,7 +441,6 @@ textarea:focus {
   gap: 20px;
 }
 
-
 .job-post-div .jp-div-input input {
   width: 30vw;
   min-width: 200px;
@@ -466,7 +453,6 @@ textarea:focus {
   background: #dddddd;
 }
 
-
 /* Profile Page Css */
 main {
   display: flex;
@@ -475,18 +461,15 @@ main {
 #navbar .settings-wrap a {
   display: flex;
   gap: 4px;
-
 }
 
 #navbar .settings-wrap a:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
-
 }
 
 #navbar .settings-wrap img {
   width: 20px;
-
 }
 
 aside {
@@ -498,7 +481,6 @@ aside {
   padding: 10px;
   gap: 20px;
   background-color: #f7f5f5;
-
 }
 
 aside #profile-picture {
@@ -515,14 +497,12 @@ aside #profile-picture {
 
 aside #profile-picture:hover {
   border: var(--secondary-color) solid 4px;
-
 }
 
 aside #profile-picture img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
 }
 
 aside #personal-info {
@@ -589,7 +569,6 @@ article ul {
   border-radius: 4px;
   overflow-x: auto;
   height: 60vh;
-
 }
 
 article ul li {
@@ -600,7 +579,6 @@ article ul li {
   align-items: center;
   padding: 10px 10px 10px 1px;
   border-radius: 4px;
-
 }
 
 article ul li img {
@@ -629,9 +607,7 @@ form .resume-container {
   align-items: center;
   width: 100vw;
   color: var(--light-text-color);
-
 }
-
 
 form .resume-container .field-box {
   width: 80vw;
@@ -641,7 +617,6 @@ form .resume-container .field-box {
   border-radius: 5px;
   margin-top: 10px;
   padding: 1%;
-
 }
 
 form .resume-container .field-box .cards-container {
@@ -649,8 +624,6 @@ form .resume-container .field-box .cards-container {
   flex-direction: column;
   gap: 10px;
   border: none;
-
-
 }
 
 form .resume-container .field-box .cards-container .resume-card {
@@ -659,7 +632,6 @@ form .resume-container .field-box .cards-container .resume-card {
   gap: 2px;
   width: 80vw;
   padding: 4px;
-
 }
 
 .form-btn-container {
@@ -670,7 +642,7 @@ form .resume-container .field-box .cards-container .resume-card {
 
 /*Footer*/
 footer {
-  background: #ffffff;
+  background: #e71818;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -678,7 +650,7 @@ footer {
 }
 
 footer a {
-  color: var(--secondary-color);
+  color: #f9f9f9;
   letter-spacing: 0.4px;
 }
 
@@ -698,7 +670,6 @@ footer a:hover {
   flex-direction: column;
   gap: 0.5rem;
   color: var(--secondary-color);
-
 }
 
 .f-list .social-links {
@@ -720,7 +691,7 @@ footer a:hover {
 .settings-container {
   max-width: 900px;
   margin: auto;
-  background: #fff;
+  background: #ab1414;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -740,7 +711,126 @@ footer a:hover {
   display: flex;
   align-items: center;
   gap: 1px;
-  
- 
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hover Effects */
+a:hover,
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animated-section {
+  animation: fadeInUp 0.8s ease both;
+}
+
+/* Stylish Forms */
+input,
+textarea,
+select {
+  padding: 12px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(255, 114, 114, 0.2);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Header/Footer + Social Icons */
+header,
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+footer .social-icons a:hover {
+  color: var(--primary-color);
+}
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: var(--primary-color);
+}
