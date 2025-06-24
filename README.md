@@ -33,5 +33,5 @@ These improvements enhanced both the user experience and the overall functionali
 ## 👤 Author
 
 - Created by [Shaikh Ammaduddin] only. <-- Team Leader
-- Usman <-- Team Member assigned but no participation from him.
+- Huzaifa <-- Team Member assigned but no participation from him.
 - Design idea based on basic job protal needs.
