@@ -1,7 +1,7 @@
 
 // This Load navbar to all the pages so I dont have to paste nav on every page 
 // makes my code clean..
-fetch('navigation.html')
+fetch('/components/navigation.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('navigation').innerHTML = data;
@@ -18,7 +18,7 @@ fetch('navigation.html')
   });
 
 // Load footer on all the pages
-fetch('footer.html')
+fetch('/components/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
