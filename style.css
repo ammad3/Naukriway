@@ -21,7 +21,6 @@ html {
 body {
   background: var(--light-color);
   color: var(--light-text-color);
-
 }
 
 a {
@@ -105,7 +104,7 @@ textarea {
   border-radius: 5px;
   padding: 5px;
   font-size: 1.1rem;
-  max-width: 77%;
+  max-width: 100%;
 }
 
 textarea:focus {
@@ -114,23 +113,51 @@ textarea:focus {
 }
 
 #logo {
-  color: var(--primary-color);
+  background: linear-gradient(90deg, var(--secondary-color) 40%, var(--primary-color), var(--primary-color));
   font-weight: 600;
   font-size: x-large;
+  background-size: 200%;
+  /* wider background allows movement */
+  background-position: center center;
+  /* Key: center the gradient initially */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.3s ease;
+
 }
 
-#logo span {
-  color: var(--secondary-color);
+#logo:hover {
+  animation: logo 5s linear infinite;
+
 }
+
+@keyframes logo {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* #logo span {
+  color: var(--secondary-color)
+} */
 
 /* navbar css */
 #navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
   position: relative;
   z-index: 1000;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  height: 50px;
+
 }
 
 #navbar ul li :any-link {
@@ -294,20 +321,20 @@ textarea:focus {
 }
 
 .login-form-body {
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 1rem;
 }
 
-.signup-form-body{
+.signup-form-body {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10%;
+  padding: 5%;
   justify-content: left;
   gap: 1rem;
 
@@ -345,7 +372,7 @@ textarea:focus {
   padding: 1rem;
   margin: 5vw;
   border-radius: 5px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.10); 
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.10);
 }
 
 .text-content h1 {
@@ -394,6 +421,8 @@ textarea:focus {
   margin-left: 5vw;
   margin-right: 5vw;
   background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
 }
 
 .job-post-page .form-container {
@@ -403,10 +432,9 @@ textarea:focus {
   min-width: 340px;
 }
 
-
 .job-post-page h1 {
   text-align: center;
-  padding: 20px;
+  padding-top: 2%;
   color: var(--secondary-color);
 }
 
@@ -416,7 +444,7 @@ textarea:focus {
   padding: 2rem;
   margin: 1rem;
   gap: 1rem;
-
+  width: 100%;
 }
 
 .job-post-div {
@@ -434,15 +462,16 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  max-width: 61vw;
-  min-width: 320px;
+  max-width: 45vw;
+  min-width: 250px;
 }
 
 .jp-div-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 1rem;
   justify-content: center;
+  width: 100%;
 }
 
 #long-line {
@@ -617,29 +646,34 @@ form .resume-container {
   padding-top: 10px;
   color: var(--light-text-color);
   border: none;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.10); 
-
 }
 
 
 form .resume-container .field-box {
   width: 80vw;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
-  border: #a1a1a1 solid 1px;
+  border: #a1a1a14b solid 1px;
+  box-shadow: 0 1px 2px #c0bcbc;
   border-radius: 5px;
   margin-top: 10px;
   padding: 1%;
-
+  gap: 2px;
 }
 
 form .resume-container .field-box .cards-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   border: none;
+}
 
+form .resume-container .field-box .cards-container label{
+  margin-left: 5px;
+}
 
+form .resume-container .field-box .cards-container h2{
+  padding: 2px;
 }
 
 form .resume-container .field-box .cards-container .resume-card {
@@ -649,6 +683,11 @@ form .resume-container .field-box .cards-container .resume-card {
   width: 80vw;
   padding: 4px;
 
+}
+
+form .resume-container textarea{
+  min-width: 250px;
+  max-width: 60vw;
 }
 
 .form-btn-container {
