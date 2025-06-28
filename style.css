@@ -61,7 +61,7 @@ input {
   border: solid var(--input-border-color) 1px;
   border-radius: 5px;
   max-width: 300px;
-  min-width: 250px;
+  min-width: 150px;
   width: 60vw;
   height: 5vh;
   padding: 5px;
@@ -696,6 +696,10 @@ form .resume-container .field-box .cards-container .resume-card {
 form .resume-container textarea{
   min-width: 250px;
   max-width: 60vw;
+}
+
+form .resume-container input{
+  min-width: 250px;
 }
 
 .form-btn-container {
