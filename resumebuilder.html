@@ -15,29 +15,33 @@
 </head>
 
 <body>
-<div id="navigation"></div>
+    <div id="navigation"></div>
     <form>
         <fieldset class="resume-container">
             <h1>Resume Builder</h1>
             <div class="field-box">
+                <h2>Personal Details</h2>
                 <fieldset class="cards-container">
-                    <h2>Personal Details</h2>
                     <!-- Full Name -->
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Abdul Rehman"
-                        required>
-                    <br>
-                    <!-- Email Address -->
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="naeem@example.com" required>
-                    <br>
+                    <div class="resume-card">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Abdul Rehman" required>
+                    </div>
+                    <div class="resume-card">
+                        <!-- Email Address -->
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="naeem@example.com" required>
+                    </div>
                     <!-- Phone Number -->
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="0312-1234567" required>
-                    <br>
+                    <div class="resume-card">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0312-1234567" required>
+                    </div>
                     <!-- Address -->
-                    <label for="address">Address</label>
-                    <textarea id="address" name="address" rows="2" placeholder="Your address" required></textarea>
+                    <div class="resume-card">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="2" placeholder="Your address" required></textarea>
+                    </div>
                 </fieldset>
             </div>
             <div class="field-box">
@@ -74,14 +78,12 @@
                         <label for="school">School Name</label>
                         <input type="text" id="school" name="school" placeholder="University of Example" required>
                     </div>
-
                     <!-- Degree -->
                     <div class="resume-card">
                         <label for="degree">Degree</label>
                         <input type="text" id="degree" name="degree" placeholder="Bachelor's in Computer Science"
                             required>
                     </div>
-
                     <!-- Graduation Year -->
                     <div class="resume-card">
                         <label for="graduateYear">Graduation Year</label>

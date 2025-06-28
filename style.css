@@ -12,6 +12,7 @@
   --light-color: #fff;
   --light-text-color: #333333;
   --input-border-color: #cfcfcf;
+  --shadow-color: #f828a9;
 }
 
 html {
@@ -60,7 +61,7 @@ input {
   border: solid var(--input-border-color) 1px;
   border-radius: 5px;
   max-width: 300px;
-  min-width: 150px;
+  min-width: 250px;
   width: 60vw;
   height: 5vh;
   padding: 5px;
@@ -69,8 +70,8 @@ input {
 }
 
 input:focus {
-  outline-color: #6e90ff;
-  box-shadow: 0 0 0 1px #6e90ff;
+  outline: none;
+  box-shadow: 0 0 8px 0 #6e90ff;
   /* remove default browser outline */
 }
 
@@ -109,7 +110,7 @@ textarea {
 
 textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #6e90ff;
+  box-shadow: 0 0 8px 0px #6e90ff;
 }
 
 #logo {
@@ -157,6 +158,9 @@ textarea:focus {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   height: 50px;
+  /* font-size: large; */
+  font-weight: 440;
+  min-width: 265px;
 
 }
 
@@ -168,6 +172,8 @@ textarea:focus {
 #navbar ul li a:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
+  transition-duration: 1s;
+  text-decoration-thickness:2px ;
 }
 
 .nav-links {
@@ -207,6 +213,8 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0;
+  border-radius: 25px;
+  box-shadow: 0 0 4px 2px #f828a9;
 }
 
 .search-form input {
@@ -651,7 +659,7 @@ form .resume-container {
 
 form .resume-container .field-box {
   width: 80vw;
-  min-width: 260px;
+  min-width: 265px;
   display: flex;
   flex-direction: column;
   border: #a1a1a14b solid 1px;
