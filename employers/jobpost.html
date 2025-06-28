@@ -1,76 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/assists/icons/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assists/icons/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assists/icons/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assists/icons/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assists/icons/favicon_io/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="/assists/icons/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assists/icons/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assists/icons/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assists/icons/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assists/icons/favicon_io/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>Post a Job</title>
-</head>
+  </head>
 
-<body class="job-post-page">
+  <body class="job-post-page">
     <div class="form-container">
-        <h1>Post a Job</h1>
+      <h1>Post a Job</h1>
 
-        <form class="job-post-form" action="/submit-job" method="post">
-            <div class="job-post-div">
-                <div class="jp-div-input">
-                    <label for="jobTitle">Job Title</label>
-                    <input type="text" id="jobTitle" name="jobTitle" required>
-                </div>
-                <div class="jp-div-input">
-                    <label for="companyName">Company Name</label>
-                    <input type="text" id="companyName" name="companyName" required>
-                </div>
+      <form class="job-post-form" action="/submit-job" method="post">
+        <div class="job-post-div">
+          <div class="jp-div-input">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle" required />
+          </div>
+          <div class="jp-div-input">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName" required />
+          </div>
+        </div>
+        <div class="job-post-div">
+          <div class="jp-div-input">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required />
+          </div>
+          <div class="jp-div-input">
+            <label for="jobType">Job Type</label>
+            <select id="jobType" name="jobType" required>
+              <option value="">--Select--</option>
+              <option value="full-time">Full-Time</option>
+              <option value="part-time">Part-Time</option>
+              <option value="internship">Internship</option>
+              <option value="freelance">Freelance</option>
+            </select>
+          </div>
+        </div>
+        <div class="jp-div-text">
+          <div class="jp-div-input">
+            <label for="description">Job Description</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+          </div>
 
-            </div>
-            <div class="job-post-div">
-                <div class="jp-div-input">
-                    <label for="location">Location</label>
-                    <input type="text" id="location" name="location" required>
-                </div>
-                <div class="jp-div-input">
-                    <label for="jobType">Job Type</label>
-                    <select id="jobType" name="jobType" required>
-                        <option value="">--Select--</option>
-                        <option value="full-time">Full-Time</option>
-                        <option value="part-time">Part-Time</option>
-                        <option value="internship">Internship</option>
-                        <option value="freelance">Freelance</option>
-                    </select>
-                </div>
-            </div>
-            <div class="jp-div-text">
-                <div class="jp-div-input">
-                    <label for="description">Job Description</label>
-                    <textarea id="description" name="description" rows="5" cols="40" required></textarea>
-                </div>
+          <div class="jp-div-input">
+            <label for="requirements">Requirements</label>
+            <textarea
+              id="requirements"
+              name="requirements"
+              rows="4"
+              cols="40"
+            ></textarea>
+          </div>
+        </div>
 
-                <div class="jp-div-input">
-                    <label for="requirements">Requirements</label>
-                    <textarea id="requirements" name="requirements" rows="4" cols="40"></textarea>
-                </div>
-            </div>
-
-            <div class="job-post-div">
-                <div class="jp-div-input">
-                    <label for="contactEmail">Contact Email</label>
-                    <input type="email" id="contactEmail" name="contactEmail" required>
-                </div>
-                <div class="jp-div-input">
-                    <label for="salary">Salary (optional)</label>
-                    <input type="number" id="salary" name="salary">
-                </div>
-            </div>
-            <button class="job-post-btn" type="submit">Submit</button>
-        </form>
-
+        <div class="job-post-div">
+          <div class="jp-div-input">
+            <label for="contactEmail">Contact Email</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="contactEmail"
+              required
+            />
+          </div>
+          <div class="jp-div-input">
+            <label for="salary">Salary (optional)</label>
+            <input type="number" id="salary" name="salary" />
+          </div>
+        </div>
+        <button class="job-post-btn" type="submit">Submit</button>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>

@@ -1,90 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/assists/icons/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assists/icons/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assists/icons/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assists/icons/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assists/icons/favicon_io/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="/assists/icons/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assists/icons/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assists/icons/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assists/icons/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assists/icons/favicon_io/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>NaukariWay - Career & Resume</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="navbar">
-        <a id="logo" href="/index.html">Naukari<span>Way</span></a>
-        <div class="settings-wrap"><a href="#"><img src="/assists/icons/setting.png" alt="">Settings</a></div>
+      <a id="logo" href="/index.html">Naukari<span>Way</span></a>
+      <div class="settings-wrap">
+        <a href="#"><img src="/assists/icons/setting.png" alt="" />Settings</a>
+      </div>
     </nav>
     <form action="">
-        <fieldset class="resume-container">
-            <div class="field-box">
-                <h2>Work Experience</h2>
-                <fieldset class="cards-container" id="experience">
-                    <div class="resume-card">
-                        <label for="company">Company Name:</label>
-                        <input type="text" id="company" name="company" placeholder="ABC Corporation" required>
-                    </div>
-                    <div class="resume-card">
-                        <label for="job-title">Job Title:</label>
-                        <input type="text" id="job-title" name="job-title" placeholder="Software Engineer" required>
-                    </div>
-                    <div class="resume-card">
-                        <label for="start-date">Start Date:</label>
-                        <input type="date" id="start-date" name="start-date" required>
-                    </div>
-                    <div class="resume-card">
-                        <label for="end-date">End Date:</label>
-                        <input type="date" id="end-date" name="end-date">
-                    </div>
-                    <div class="resume-card">
-                        <label for="job-description">Job Description:</label>
-                        <textarea id="job-description" name="job-description" rows="4"
-                            placeholder="Describe your role..." required></textarea>
-                    </div>
-                </fieldset>
+      <fieldset class="resume-container">
+        <div class="field-box">
+          <h2>Work Experience</h2>
+          <fieldset class="cards-container" id="experience">
+            <div class="resume-card">
+              <label for="company">Company Name:</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="ABC Corporation"
+                required
+              />
             </div>
-            <div class="field-box">
-                <h2>Education</h2>
-                <fieldset class="cards-container" id="education">
-                    <!-- School Name -->
-                     <div class="resume-card">
-                         <label for="school">School Name:</label>
-                         <input type="text" id="school" name="school" placeholder="University of Example">
-                     </div>
-                    
-                    <!-- Degree -->
-                     <div class="resume-card">
-                         <label for="degree">Degree:</label>
-                         <input type="text" id="degree" name="degree" placeholder="Bachelor's in Computer Science">
-                     </div>
-                    
-                    <!-- Graduation Year -->
-                     <div class="resume-card">
-                        <label for="graduate-Year">Graduation Year:</label>
-                        <input type="number" id="graduate-Year" name="gradYear" min="1900" max="2100">
-                     </div>
-     
-                </fieldset>
+            <div class="resume-card">
+              <label for="job-title">Job Title:</label>
+              <input
+                type="text"
+                id="job-title"
+                name="job-title"
+                placeholder="Software Engineer"
+                required
+              />
             </div>
-            <div class="field-box">
-                <h2>Skills</h2>
-                <fieldset class="cards-container" id="add-skill">
-                    <div class="resume-card">
-                        <label for="skills">Skill:</label>
-                        <input type="text" id="skills" name="skills" placeholder="" required>
-                    </div>
-                </fieldset>
+            <div class="resume-card">
+              <label for="start-date">Start Date:</label>
+              <input type="date" id="start-date" name="start-date" required />
             </div>
-            <div class="form-btn-container">
-                <button id="submit" type="submit">Submit</button>
-                <button id="reset" type="reset">Reset</button>
+            <div class="resume-card">
+              <label for="end-date">End Date:</label>
+              <input type="date" id="end-date" name="end-date" />
             </div>
-       
-        </fieldset>
-    </form>
-</body>
+            <div class="resume-card">
+              <label for="job-description">Job Description:</label>
+              <textarea
+                id="job-description"
+                name="job-description"
+                rows="4"
+                placeholder="Describe your role..."
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <div class="field-box">
+          <h2>Education</h2>
+          <fieldset class="cards-container" id="education">
+            <!-- School Name -->
+            <div class="resume-card">
+              <label for="school">School Name:</label>
+              <input
+                type="text"
+                id="school"
+                name="school"
+                placeholder="University of Example"
+              />
+            </div>
 
+            <!-- Degree -->
+            <div class="resume-card">
+              <label for="degree">Degree:</label>
+              <input
+                type="text"
+                id="degree"
+                name="degree"
+                placeholder="Bachelor's in Computer Science"
+              />
+            </div>
+
+            <!-- Graduation Year -->
+            <div class="resume-card">
+              <label for="graduate-Year">Graduation Year:</label>
+              <input
+                type="number"
+                id="graduate-Year"
+                name="gradYear"
+                min="1900"
+                max="2100"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div class="field-box">
+          <h2>Skills</h2>
+          <fieldset class="cards-container" id="add-skill">
+            <div class="resume-card">
+              <label for="skills">Skill:</label>
+              <input
+                type="text"
+                id="skills"
+                name="skills"
+                placeholder=""
+                required
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-btn-container">
+          <button id="submit" type="submit">Submit</button>
+          <button id="reset" type="reset">Reset</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>
