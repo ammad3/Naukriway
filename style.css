@@ -33,6 +33,13 @@ ul li {
   list-style: none;
 }
 
+
+  /* h1{
+    border: none;
+    text-shadow:  1px 1px 1px #383838;
+   text-shadow: offset-x offset-y blur-radius color; 
+  } */
+
 /* button is used in 2 pages and its reusable */
 button {
   display: flex;
